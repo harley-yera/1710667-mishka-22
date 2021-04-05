@@ -1,0 +1,39 @@
+.hero {
+  background-color: white;
+}
+
+.hero__headline {
+  margin: 0;
+  color: black;
+  font-size: 27px;
+  line-height: 30px;
+  background-image: url("../img/hero-mobile@2x1.jpg");
+  background-repeat: no-repeat;
+}
+
+.hero__list {
+  margin: 0;
+  padding-left: 0;
+}
+
+.hero__item {
+  list-style: none;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  padding-top: 24px;
+  padding-bottom: 31px;
+
+  &--interior {
+    background-color: #63d1bb;
+  }
+
+  &--toys {
+    background-color: #56c3b2;
+  }
+}
+
+.hero__unit {
+  color: #ffffff;
+  text-decoration: none;
+}
