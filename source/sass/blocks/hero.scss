@@ -1,0 +1,35 @@
+.hero {
+  background-color: $white;
+}
+
+.hero__headline {
+  margin: 0;
+  color: $black;
+  font-size: 27px;
+  background-image: url("../img/hero-mobile@2x1.jpg");
+  background-repeat: no-repeat;
+}
+
+.hero__list {
+  @include list-reset;
+}
+
+.hero__item {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  padding-top: 24px;
+  padding-bottom: 31px;
+
+  &--interior {
+    background-color: $accent-color;
+  }
+
+  &--toys {
+    background-color: $fountain-blue;
+  }
+}
+
+.hero__unit {
+  color: $white;
+}

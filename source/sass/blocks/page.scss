@@ -1,0 +1,16 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: flex-start;
+  margin: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: $text-color;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  font-style: normal;
+}
