@@ -3,10 +3,11 @@
 @import "global/variables.scss";
 @import "global/fonts.scss";
 @import "global/global.scss";
+@import "global/visually-hidden.scss";
+@import "global/mixins.scss";
+
 
 // Blocks
-
-// Index
 
 @import "blocks/page.scss";
 @import "blocks/main-nav.scss";
