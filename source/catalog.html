@@ -2,17 +2,19 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
     <title>HTML Academy: Мишка</title>
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
-      </a>
-      <button class="page-header__toggle" type="button">
-        <span class="visually-hidden">Открыть/Закрыть меню</span>
-      </button>
       <nav class="main-nav">
+        <a class="main-nav__logo logo" href="index.html">
+          <img class="logo__img" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Магазин Мишка">
+        </a>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть/Закрыть меню</span>
+        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">
@@ -37,11 +39,11 @@
               <span>пока пуста</span>
             </a>
           </li>
-        </ul>
+      </ul>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Каталог товаров</h1>
+      <h1 class="page-main__title">Каталог товаров</h1>
       <section class="products">
         <article class="product">
           <a class="product__photo" href="#">
@@ -83,7 +85,7 @@
           </a>
           <div class="product__info">
             <h2 class="product__title">
-              <a class="product__title-link" href="#">Большая корзина для игрушек</a>
+              <a class="product__title-link" href="#">Большая корзинка<br>для игрушек</a>
             </h2>
             <p class="product__description">Диаметр 30 см, высота 30 см</p>
             <div class="product__order-info">
@@ -103,7 +105,7 @@
             <img src="img/video-production.jpg" width="260" height="150" alt="Делаем корзинку">
           </div>
           <p class="video__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="order-btn" href="#">Сделать заказ</a>
+          <a class="order-btn button" href="#">Сделать заказ</a>
         </article>
       </section>
     </main>
@@ -129,7 +131,9 @@
         </ul>
         <div class="page-footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
         </div>
       </div>
     </footer>
