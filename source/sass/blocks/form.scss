@@ -6,10 +6,6 @@
   color: $accent-color;
 }
 
-.form__group {
-  border: none;
-}
-
 .form__list {
   @include list-reset;
   margin: 0;
@@ -26,4 +22,5 @@
   font-size: 14px;
   line-height: 16px;
   margin: 0;
+  margin-bottom: 30px;
 }
