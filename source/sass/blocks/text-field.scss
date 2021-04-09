@@ -1,0 +1,33 @@
+.text-field {
+  margin-bottom: 34px;
+}
+
+.text-field__label {
+  text-transform: uppercase;
+}
+
+.text-field__input {
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 17px;
+  color: $opacity-black;
+  font-size: 17px;
+  line-height: 18px;
+  border: 0;
+  border-bottom: 2px solid $black;
+
+  &:hover {
+    border-bottom: 2px solid $accent-color;
+  }
+}
+
+.text-field__textarea {
+  color: $opacity-black;
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  padding-top: 17px;
+  padding-left: 17px;
+  padding-right: 17px;
+  border: 2px solid $text-color;
+}

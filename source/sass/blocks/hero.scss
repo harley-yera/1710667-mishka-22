@@ -4,10 +4,12 @@
 
 .hero__headline {
   margin: 0;
+  padding-top: 73px;
   color: $black;
   font-size: 27px;
   background-image: url("../img/hero-mobile@2x1.jpg");
   background-repeat: no-repeat;
+  height: 300px;
 }
 
 .hero__list {

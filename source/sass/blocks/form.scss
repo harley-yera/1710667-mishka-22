@@ -1,0 +1,27 @@
+.form__title {
+  margin-bottom: 25px;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $accent-color;
+  text-transform: uppercase;
+}
+
+.form__list {
+  @include list-reset;
+  margin: 0;
+}
+
+.form__item {
+  color: $black;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.form__legend {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+  margin-bottom: 30px;
+}
