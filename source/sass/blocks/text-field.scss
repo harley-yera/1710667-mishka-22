@@ -11,6 +11,7 @@
   padding-top: 16px;
   padding-bottom: 17px;
   color: $opacity-black;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   line-height: 18px;
   border: 0;
@@ -22,8 +23,8 @@
 }
 
 .text-field__textarea {
-  color: $opacity-black;
-  font-family: inherit;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: $text-color;
   font-size: 17px;
   line-height: 18px;
   padding-top: 17px;
