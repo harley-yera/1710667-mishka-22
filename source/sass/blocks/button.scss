@@ -6,6 +6,11 @@
   border-radius: 0;
   background-color: $transparent;
 
+  &:hover {
+    color: $white;
+    background-color: $text-color;
+  }
+
   &--primary {
     font-size: 18px;
     line-height: 20px;

@@ -1,3 +1,5 @@
+// Colors
+
 $white: #ffffff;
 $black: #000000;
 $downy: #63d1bb;
@@ -8,5 +10,12 @@ $tundora: #444444;
 $seashell: #f1f1f1;
 $opacity-black: rgba(0, 0, 0, 0.3);
 $transparent: rgba($black, 0);
+
 $accent-color: $downy;
 $text-color: $tundora;
+
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;

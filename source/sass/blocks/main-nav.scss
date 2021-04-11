@@ -1,9 +1,26 @@
 .main-nav {
+  display: flex;
+  flex-direction: column;
+  width: auto;
   margin: 0;
 }
 
+.main-nav__logo {
+  align-self: center;
+  height: 35px;
+  width: 86px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
 .main-nav__list {
+  @include list-reset;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.main-nav__delivery {
+  margin: 0;
+  line-height: 24px;
 }
