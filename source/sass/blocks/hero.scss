@@ -1,10 +1,16 @@
 .hero {
-  background-color: $white;
+  background-color: $seashell;
+  background-repeat: no-repeat;
+  margin-bottom: 31px;
 }
 
 .hero__headline {
   margin: 0;
-  padding-top: 73px;
+  padding-top: 85px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
   color: $black;
   font-size: 27px;
   background-image: url("../img/hero-mobile@2x1.jpg");
@@ -22,6 +28,8 @@
   font-weight: 700;
   padding-top: 24px;
   padding-bottom: 31px;
+  padding-right: 30px;
+  padding-left: 30px;
 
   &--interior {
     background-color: $accent-color;

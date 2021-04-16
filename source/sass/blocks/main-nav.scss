@@ -3,6 +3,8 @@
   flex-direction: column;
   width: auto;
   margin: 0;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
 }
 
 .main-nav__logo {
@@ -11,6 +13,8 @@
   width: 86px;
   margin-top: 22px;
   margin-bottom: 22px;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
 }
 
 .main-nav__list {
@@ -20,7 +24,11 @@
   font-weight: 700;
 }
 
+.main-nav__special-list {
+  font-size: 15px;
+}
+
 .main-nav__delivery {
   margin: 0;
-  line-height: 24px;
+  font-size: 15px;
 }
