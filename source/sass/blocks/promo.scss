@@ -1,9 +1,17 @@
 .promo {
   margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
 }
 
 .promo__title {
   margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .promo__headline {
@@ -12,6 +20,11 @@
   color: $black;
   margin: 0;
   margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .promo__top-product {
@@ -20,6 +33,20 @@
   line-height: 20px;
   color: $accent-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    line-height: 17px;
+    text-align: center;
+    width: 90px;
+  }
+}
+
+.promo__information {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .promo__description {
@@ -28,11 +55,21 @@
   line-height: 24px;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+    width: 292px;
+  }
 }
 
 .promo__table {
   line-height: 20px;
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 292px;
+  }
 }
 
 .promo__tag {
@@ -47,6 +84,15 @@
 
 .promo__image {
   margin-bottom: 25px;
+  background-image: url("../img/triple-set-mobile.jpg");
+  width: 260px;
+  height: 315px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/triple-set-tablet.jpg");
+    width: 334px;
+    height: 404px;
+  }
 }
 
 .promo__price {
@@ -55,4 +101,8 @@
   line-height: 24px;
   font-weight: 700;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
