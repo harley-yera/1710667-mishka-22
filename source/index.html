@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico">
     <title>HTML Academy: Мишка</title>
@@ -39,77 +40,83 @@
               <span>пока пуста</span>
             </a>
           </li>
-      </ul>
+        </ul>
+        <ul class="main-nav__list special-list">
+          <li class="special-list__item">
+            <a class="special-list__link" href="#">
+              Новые поступления
+            </a>
+          </li>
+          <li class="special-list__item">
+            <a class="special-list__link" href="#">
+              Распродажа
+            </a>
+          </li>
+        </ul>
+        <p class="main-nav__delivery">Бесплатная доставка по России</p>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Магазин вязаных товаров «Мишка»</h1>
       <section class="hero">
-        <div class="hero__wrapper">
-            <h2 class="hero__headline">Милые штуки ручной работы для дома</h2>
+        <div class="hero__wrapper container">
+            <h2 class="hero__headline">Милые штуки ручной<br>работы для дома</h2>
             <ul class="hero__list">
               <li class="hero__item hero__item--interior">
                 <a class="hero__unit" href="#">
-                Предметы интерьера
+                  Предметы<br>интерьера
                 </a>
               </li>
               <li class="hero__item hero__item--toys">
                 <a class="hero__unit" href="#">
-                  Детские игрушки
+                  Детские<br>игрушки
                 </a>
               </li>
             </ul>
         </div>
       </section>
-      <section class="promo">
-        <div class="promo__title">
-          <h2 class="promo__headline">Вязаные корзинки</h2>
-          <span class="promo__top-product">Товар недели</span>
-        </div>
-        <article class="promo__information">
-          <p class="promo__description">
-            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-          </p>
-          <table class="promo__table">
-            <tbody>
-              <tr class="promo__feature">
-                <td class="promo__tag">Цвет:</td>
-                <td class="promo__value">«Тиффани»/серый</td>
-              </tr>
-              <tr class="promo__feature">
-                <td class="promo__tag">Диаметр:</td>
-                <td class="promo__value">25 см</td>
-              </tr>
-              <tr class="promo__feature">
-                <td class="promo__tag">Высота:</td>
-                <td class="promo__value">15 см</td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="promo__image">
-            <img src="img/triple-set-mobile.jpg" width="260" height="315" alt="Корзинки">
-          </div>
-          <div class="promo__price">Цена: 990 руб.</div>
-            <a class="button button--primary" href="order.html">Заказать</a>
-          </div>
-        </article>
+      <section class="promo container">
+        <h2 class="promo__headline">Вязаные корзинки</h2>
+        <span class="promo__top-product">Товар недели</span>
+        <p class="promo__description">
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+        </p>
+        <table class="promo__table">
+          <tbody>
+            <tr class="promo__feature">
+              <td class="promo__tag">Цвет:</td>
+              <td class="promo__value">«Тиффани»/серый</td>
+            </tr>
+            <tr class="promo__feature">
+              <td class="promo__tag">Диаметр:</td>
+              <td class="promo__value">25 см</td>
+            </tr>
+            <tr class="promo__feature">
+              <td class="promo__tag">Высота:</td>
+              <td class="promo__value">15 см</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="promo__image"></div>
+        <div class="promo__price">Цена: 990 руб.</div>
+        <a class="button button--primary promo__button" href="#">Заказать</a>
       </section>
-      <section class="about wrapper">
+      <section class="about container">
         <h2 class="about__title">Коротко о нас:</h2>
         <ul class="about__list">
-          <li class="about__item about__item--flower">Экологически чистые материалы</li>
+          <li class="about__item about__item--flower">Экологически<br>чистые материалы</li>
           <li class="about__item about__item--money">Скандинавский стиль по российской цене</li>
           <li class="about__item about__item--heart">Увеличивает лайки на фотографиях</li>
-          <li class="about__item about__item--thread">Связано вручную с любовью и умилением</li>
+          <li class="about__item about__item--thread">Связано вручную<br>с любовью и умилением</li>
           <li class="about__item about__item--rocket">Поддержка отечественного производителя</li>
-          <li class="about__item about__item--package">Поставляется в подарочной упаковке</li>
+          <li class="about__item about__item--package">Поставляется<br>в подарочной упаковке</li>
         </ul>
       </section>
-      <section class="slider">
+      <section class="slider container">
         <div class="slider__wrapper">
           <h2 class="slider__title">Отзывы</h2>
           <div class="slider__list">
-            <div class="slider__item slide">
+            <div class="slider__item">
               <blockquote class="slider__text">
                 Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
                 у популярных инстамамочек.
@@ -121,7 +128,7 @@
                 <a class="slider__email" href="mailto:@misssssiskras">@misssssiskras</a>
               </div>
             </div>
-            <div class="slider__item slide">
+            <div class="slider__item slider__new-slide">
               <blockquote class="slider__text">
                 Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как
                 у популярных инстамамочек. В отчаянии, я накупила аксессуаров
@@ -133,7 +140,7 @@
                 <a class="slider__email" href="mailto:@misssssiskras2">@misssssiskras2</a>
               </div>
             </div>
-            <div class="slider__item slide">
+            <div class="slider__item slider__new-slide">
               <blockquote class="slider__text">
                 Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков,
                 как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
@@ -147,19 +154,21 @@
             </div>
           </div>
           <div class="slider__arrows">
-            <a class="slider__arrow feedback__arrow--preview" href="#">
+            <a class="slider__arrow slider__arrow--preview" href="#">
               <span class="visually-hidden">Предидущий</span>
             </a>
-            <a class="slider__arrow feedback__arrow--next" href="#">
+            <a class="slider__arrow slider__arrow--next" href="#">
               <span class="visually-hidden">Следующий</span>
             </a>
           </div>
-          <a class="button button--primary" href="#">Написать</a>
+          <a class="button button--primary slider__button" href="#">Написать</a>
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper container">
           <h2 class="contacts__title">Контакты</h2>
+          <span class="contacts__icon-flag"></span>
+          <div class="contacts__list">
           <div class="contacts__item">
             <span class="contacts__tag">e-mail:</span>
             <a class="contacts__value  contacts__value--link">info@mimimishkashop.ru</a>
@@ -168,27 +177,28 @@
             <span class="contacts__tag">адрес:</span>
             <a class="contacts__value">г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</a>
           </div>
+          </div>
         </div>
-        <div class="contacts_map map"></div>
-        <a class="button button--secondary" href="#">Напишите нам</a>
+        <div class="contacts__map map"></div>
+        <a class="button button--secondary contacts__button" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper container">
         <a class="page-footer__logo"></a>
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social-link social-link--instagram" href="https://www.instagram.com/htmlacademy">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
               <span class="visually-hidden">Мы в Инстаграме</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social-link social-link--facebook" href="https://www.facebook.com/htmlacademy">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Мы в Фейсбуке</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social-link social-link--twitter" href="#">
+            <a class="social__link social__link--twitter" href="#">
               <span class="visually-hidden">Мы в Твитере</span>
             </a>
           </li>

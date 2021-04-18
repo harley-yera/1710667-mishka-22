@@ -6,19 +6,26 @@
   border-radius: 0;
   background-color: $transparent;
 
+  &:hover {
+    color: $white;
+    background-color: $text-color;
+  }
+
   &--primary {
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
-    padding: 16px 70px;
+    padding: 16px 30px;
     border: 2px solid $text-color;
+    justify-content: center;
   }
 
   &--secondary {
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
-    padding: 16px 40px;
+    padding: 18px 30px;
     border: 2px solid $text-color;
+    justify-content: center;
   }
 }
