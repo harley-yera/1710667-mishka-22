@@ -1,0 +1,7 @@
+.special-list {
+  font-size: 15px;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}

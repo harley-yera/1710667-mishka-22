@@ -1,34 +1,112 @@
 .contacts {
   padding-top: 31px;
-  margin: 0;
-  margin-bottom: 62px;
+  padding-bottom: 62px;
+}
+
+.contacts__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 20px;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    order: -2;
+    margin-right: 370px;
+  }
+}
+
+.contacts__icon-flag {
+  display: block;
+  width: 47px;
+  height: 80px;
+  background-color: tomato;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    margin-left: auto;
+  }
+}
+
+.contacts__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 41px;
+  }
 }
 
 .contacts__item {
+  padding-top: 20px;
   padding-bottom: 30px;
   display: grid;
   grid-template-columns: 1fr 2fr;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 26px;
+  }
 }
 
 .contacts__tag {
   font-size: 14px;
   padding-right: 31px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .contacts__value {
   font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .contacts__map {
+  margin: 0 auto;
   height: 455px;
-  width: 100%;
-  background-image: url("../img/map-mobile@1x1.png");
+  width: 320px;
+  background-image: url("../img/map-mobile.png");
   background-repeat: no-repeat;
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    height: 457px;
+    width: 768px;
+    background-image: url("../img/map-tablet.png");
+    background-repeat: no-repeat;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 527px;
+    background-image: url("../img/map-desktop.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.contacts__button {
+  display: flex;
+  margin: 0 auto;
+  width: 260px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    width: 230px;
+    justify-self: center;
+  }
 }

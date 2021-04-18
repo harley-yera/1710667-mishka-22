@@ -1,12 +1,26 @@
 .about {
   padding-top: 31px;
-  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 174px;
+    padding-right: 174px;
+  }
 }
 
 .about__title {
   font-size: 25px;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about__list {
@@ -25,8 +39,48 @@
   padding-top: 50px;
   margin-bottom: 30px;
 
+  &--money {
+    padding-right: 40px;
+  }
+
+  &--heart {
+    padding-right: 55px;
+  }
+
+  &--thread {
+    padding-right: 30px;
+  }
+
+  &--package {
+    padding-right: 10px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
+
+    &--money {
+      order: 3;
+      padding-right: 70px;
+    }
+
+    &--heart {
+      order: 5;
+      padding-right: 95px;
+    }
+
+    &--thread {
+      order: 2;
+      padding-right: 20px;
+    }
+
+    &--rocket {
+      order: 4;
+      padding-right: 0;
+    }
+
+    &--package {
+      order: 6;
+    }
   }
 }

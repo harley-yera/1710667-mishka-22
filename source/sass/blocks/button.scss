@@ -15,13 +15,9 @@
     font-size: 18px;
     line-height: 20px;
     font-weight: 700;
-    padding: 18px 30px;
+    padding: 16px 30px;
     border: 2px solid $text-color;
     justify-content: center;
-
-    @media (max-width: $mobile-width-only) {
-      width: 100%;
-    }
   }
 
   &--secondary {
@@ -30,9 +26,6 @@
     font-weight: 700;
     padding: 18px 30px;
     border: 2px solid $text-color;
-
-    @media (max-width: $mobile-width-only) {
-      width: 100%;
-    }
+    justify-content: center;
   }
 }

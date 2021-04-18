@@ -1,5 +1,5 @@
 .promo {
-  margin-bottom: 35px;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -162,6 +162,10 @@
 }
 
 .promo__button {
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+
   @media (min-width: $tablet-width) {
     align-self: end;
     margin-right: 42px;
