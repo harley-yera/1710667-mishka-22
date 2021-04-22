@@ -7,11 +7,6 @@
     flex-direction: column;
     margin-bottom: 64px;
   }
-
-  @media (min-width: $desktop-width) {
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
 }
 
 .video__title {
@@ -84,9 +79,5 @@
     order: 3;
     font-size: 17px;
     width: 584px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 230px;
   }
 }
