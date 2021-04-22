@@ -1,13 +1,35 @@
 .contacts {
+  width: 320px;
+  margin: 0 auto;
   padding-top: 31px;
   padding-bottom: 62px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 105px;
+    display: flex;
+    position: relative;
+  }
 }
 
 .contacts__wrapper {
+  padding: 0 30px;
+
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    padding-top: 60px;
+    padding-left: 120px;
+    margin-right: 50px;
   }
 }
 
@@ -19,48 +41,51 @@
     font-size: 43px;
     line-height: 50px;
     order: -2;
-    margin-right: 370px;
-  }
-}
-
-.contacts__icon-flag {
-  display: block;
-  width: 47px;
-  height: 80px;
-  background-color: tomato;
-
-  @media (max-width: $mobile-width-only) {
-    display: none;
   }
 
-  @media (min-width: $tablet-width) {
-    order: -1;
-    margin-left: auto;
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
 .contacts__list {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 41px;
+    flex-direction: row;
+    gap: 40px;
+    padding-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    padding-top: 0;
   }
 }
 
 .contacts__item {
   padding-top: 20px;
   padding-bottom: 30px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
 
   @media (min-width: $tablet-width) {
     margin-right: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
   }
 }
 
 .contacts__tag {
   font-size: 14px;
-  padding-right: 31px;
+  margin-right: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
@@ -96,6 +121,7 @@
     width: 527px;
     background-image: url("../img/map-desktop.png");
     background-repeat: no-repeat;
+    margin: 0;
   }
 }
 
@@ -108,5 +134,11 @@
     font-size: 17px;
     width: 230px;
     justify-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 120px;
   }
 }

@@ -1,3 +1,13 @@
+.user-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
 .user-list__item {
   display: block;
   font-size: 17px;
@@ -6,5 +16,14 @@
 
   @media (max-width: $mobile-width-only) {
     border-top: 1px solid $gallery;
+  }
+}
+
+.user-list__link {
+  @media (min-width: $tablet-width) {
+    &--search {
+      padding-right: 31px;
+      padding-left: 31px;
+    }
   }
 }

@@ -1,3 +1,20 @@
+.site-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    order: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      order: -1;
+    }
+  }
+}
+
 .site-list__item {
   display: block;
   font-size: 17px;
@@ -6,5 +23,9 @@
 
   @media (max-width: $mobile-width-only) {
     border-top: 1px solid $gallery;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 18px;
   }
 }
