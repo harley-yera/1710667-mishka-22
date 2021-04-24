@@ -1,3 +1,24 @@
 .radio {
-  margin-bottom: 24px;
+  display: inline-block;
+  padding-left: 63px;
+  margin-bottom: 15px;
+}
+
+.radio__tag {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.1em $text-color;
+}
+
+.radio__input:hover + .radio__tag,
+.radio__input:focus + .radio__tag {
+  box-shadow: 0 0 0 0.1em $light-downy;
+}
+
+.radio__input:disabled + .radio__tag {
+  box-shadow: 0 0 0 0.1em $opacity-black;
 }

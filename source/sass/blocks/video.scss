@@ -1,11 +1,18 @@
 .video__post {
   margin-bottom: 58px;
   position: relative;
+  border: 1px solid $gallery;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 682px 1fr;
+    grid-template-rows: repeat(3, auto);
   }
 }
 
@@ -30,11 +37,23 @@
     height: 27px;
     top: 25px;
     left: 35px;
+
+    @media (min-width: $desktop-width) {
+      top: 41px;
+      left: 40px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     order: 1;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    padding-left: 40px;
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
 }
 
@@ -49,6 +68,11 @@
 
   @media (min-width: $tablet-width) {
     order: -2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/4;
+    grid-column: 1/2;
   }
 }
 
@@ -67,6 +91,11 @@
     line-height: 30px;
     padding-top: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
 }
 
 .video__button {
@@ -79,5 +108,11 @@
     order: 3;
     font-size: 17px;
     width: 584px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    grid-column: 2/3;
+    grid-row: 3/4;
   }
 }
