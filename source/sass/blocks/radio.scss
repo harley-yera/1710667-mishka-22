@@ -1,7 +1,6 @@
 .radio {
   display: inline-block;
   padding-left: 63px;
-  margin-bottom: 15px;
 }
 
 .radio__tag {
@@ -10,6 +9,7 @@
   height: 40px;
   top: 0;
   left: 0;
+  margin-bottom: 20px;
   border-radius: 50%;
   box-shadow: 0 0 0 0.1em $text-color;
 }

@@ -20,8 +20,8 @@
 }
 
 .user-list__link {
-  @media (min-width: $tablet-width) {
-    &--search {
+  &--search {
+    @media (min-width: $tablet-width) {
       padding-right: 31px;
       padding-left: 31px;
     }
